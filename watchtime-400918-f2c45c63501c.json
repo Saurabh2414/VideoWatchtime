@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "watchtime-400918",
+  "private_key_id": "f2c45c63501cf42503451536a8f385babfa0e911",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtCi2nAbadEOD1\nSvSALUov9loSvd5Cb5ZEhYqX1KDhbiF3aAvxvfKNCalExtEiQYURgnFTdq+2OQNh\nUC9bvPKqTdawhoOWa6AGk1Wh2N7dNNX0q0dX6YM/J7I87lIrqaPpitkrUEBOeDZf\nj8BOvl1imbHt8T5QxNirhYp9lMzv/ek+z40RcldbqEqodIfa8rereGpEr9m4SI73\nyxaQ/cLpPxsl/hhbN23W2cYtCyObwu84MQPgkhp+ycqqBI2AX0D1YsXHiGXy5WvZ\nbRxBDRCQqzSNf5fNIuhcDdHRFCtRSzoxXUQqbYKAx3+ez4jMzGYRnuyWb0fs+Ili\nFPkcuWKBAgMBAAECggEAS15QjhpX8MeGRDDWl/GiC4vwpZMfeK5jtAq6V/Fb9XRj\njT+7XBrQx496s6MpOhNxozO+qozacbMZfsxPJFUDGRx4M0ETlXPhKpwHw0vTnmPC\nASSNGYRzDxH6N0HSdoQYCcPZXV1B9Su0+yCAsYuG30h0UGAwNTvX57Vtoc8rCChH\nbDevRcP/SUnFAnSnVXsxgO8pHYnKeHJP1rR/7jilLu2QzLb8XvVFJgGX5+QVB6F9\nft54G/7lOfZIQoa5caTSsO2JR0kKJxHSxvG0qa8cX6rXGwlmmMrr7PtOi7I2RcOF\nKeS45A3aCSC104oIrmYY02jJwLNReik79vLfSAQUBQKBgQDbSZszg4DfsTS8i01h\nLuiPDRahpT8hxCTu78YtK0JR+J5EcRQrkYXH4aYEAuNh6c9t38bsKhE/3eQVGbil\njnNTlQwaAMDVXy5RIv/b0fZyWJVE8cj0XbEiZXFrav9DxqFTmYPLjD5yEv1NDmCV\n1TbJg0YLOdk2M729W5NLZN6ZLwKBgQDKAnMfnYA01N707vE8TWbIikl6qgPH1Zqk\nDIlClu+iDd3+9n3rQ4XBqI1u6FritcIP2S54uk5MOOMtnW9par/BYU4au9y+cujR\nJdOcQb8mVTjFV378Bb1MPxl+eDoIknV/6VPWJnfnY9+Ik65hPxKcETUBdG6pM+aO\ngFMKmEhzTwKBgD+XR8+Xef7kh5OJngXpsX0SYZa8seMb204C8GhW3COjQlo8pInB\n6Ja/RAJzx/az8/g75ZbE2D26HhNUYyx3c9AwL9M2lrUJpgfXa3UWnS4prBfTOeBL\nbzu3ST3KSH4iEtSIdyTG5bD0+smmurGYpAup6t0EiI3kUUihTsSVWsv3AoGAUcmo\nHra//6PoGTbcyNN1t9/1XAqVuUTMdXr139YIc441wVK/LI+MChpaGPtOQNfiGFSQ\nMiUMKmQl5oQFZaLovDzPSJejCiCwDm3IPU2JPNXoRE3mhdc1CzfI9KFsrafOltk7\nLkso5LBVApD4WzsUJ8f3s/0WCL+Qq0VdWb7KJpUCgYEAt2BE1bk9WC5igsyc38GH\nUdZj+gNUQZBNblbkcMeoGoKR3Fo9RKSp16WERdxq2f8iSNptqrok9NTZCCV1VK5v\nZXNjbZj023D01M5OuZtywCoyDvvsEsROQe7HAFgchUaV4dPA2ka+IdM5FWqd1MsD\nrbG41UnLn02VRl9E0o3ftk0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "watchtime-data@watchtime-400918.iam.gserviceaccount.com",
+  "client_id": "102512583113233072336",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/watchtime-data%40watchtime-400918.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
