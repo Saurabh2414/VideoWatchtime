@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h2>Plot for Course: {{ course_name }}</h2>
+    <h3>Average Duration: {{ avg_duration }}</h3>
+    <img src="{{ url_for('static', filename=plot_file) }}" alt="Plot Image">
+
+</body>
+</html>

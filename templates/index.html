@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Course and Video</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Select a Course and Video</h2>
+
+        <div class="form-group">
+            <label for="course-dropdown">Select Course:</label>
+            <select class="form-control" id="course-dropdown">
+                <!-- Course names will be dynamically populated here -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="video-dropdown">Select Video:</label>
+            <select class="form-control" id="video-dropdown">
+                <!-- Video names will be dynamically populated based on selected course -->
+            </select>
+        </div>
+
+        <button class="btn btn-primary" id="show-data">Show Data</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Load course names when the page loads
+            $.getJSON('/get_courses', function(data) {
+                data.forEach(function(course) {
+                    $('#course-dropdown').append('<option value="' + course + '">' + course + '</option>');
+                });
+            });
+
+            // When a course is selected, load the video names for that course
+            $('#course-dropdown').change(function() {
+                var selectedCourse = $(this).val();
+                $.getJSON('/get_videos/' + selectedCourse, function(data) {
+                    // First, clear any existing options
+                    $('#video-dropdown').empty();
+
+                    data.forEach(function(video) {
+                        $('#video-dropdown').append('<option value="' + video + '">' + video + '</option>');
+                    });
+                });
+            });
+
+            // When the "Show Data" button is clicked, redirect to the plot page for the selected video
+            $('#show-data').click(function() {
+                var selectedVideo = $('#video-dropdown').val();
+                if (selectedVideo) {
+                    window.location.href = '/plot/video/' + selectedVideo;
+                } else {
+                    alert("Please select a video.");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
