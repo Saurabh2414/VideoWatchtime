@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization for Video</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Plot for Video: {{ video_name }}</h2>
+        <h3>Total Watchtime across All Courses: {{ total_minutes }} minutes</h3>
+        <img src="{{ url_for('static', filename=plot_file) }}?{{ timestamp }}" alt="Plot Image" class="img-fluid">
+
+        <div class="mt-5">
+            <h4>Breakdown by Course</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Watch Time (minutes)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for course, time in course_watchtimes.items() %}
+                        <tr>
+                            <td>{{ course }}</td>
+                            <td>{{ time }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
